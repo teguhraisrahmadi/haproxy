@@ -2,5 +2,5 @@
 
 ## Getting Started
 ```
-curl -fsSL https://raw.githubusercontent.com/teguhraisrahmadi/haproxy/main/install.sh | bash
+curl -L https://github.com/teguhraisrahmadi/haproxy/archive/refs/heads/main.tar.gz | tar -xz && mv haproxy-main haproxy
 ```
