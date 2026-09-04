@@ -1,0 +1,17 @@
+services:
+  haproxy:
+    image: haproxy:3.5-dev6-alpine3.24
+    container_name: haproxy
+    command:
+      - haproxy
+      - -W
+      - -db
+      - -f
+      - /usr/local/etc/haproxy
+    ports:
+      - 80:80
+      - 443:443
+      - 6443:6443
+    volumes:
+      - ./configuration:/usr/local/etc/haproxy:ro
+    restart: unless-stopped
