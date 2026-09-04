@@ -9,6 +9,7 @@ This repository contains the configuration and setup for **HAProxy** as a load b
 - Suitable for on-premises and self-managed Kubernetes environments
 
 ## Getting Started
+> Recommended directory: /opt
 ```
 curl -L https://github.com/teguhraisrahmadi/haproxy/archive/refs/heads/main.tar.gz | tar -xz && mv haproxy-main haproxy
 ```
