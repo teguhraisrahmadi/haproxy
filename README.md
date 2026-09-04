@@ -10,13 +10,15 @@ This repository contains the configuration and setup for **HAProxy** as a load b
 
 ## Getting Started
 > Recommended directory: /opt
+
+> ⚠️ Important: Make sure the haproxy directory does not exist before downloading and extracting the package
 ```
 curl -L https://github.com/teguhraisrahmadi/haproxy/archive/refs/heads/main.tar.gz | tar -xz && mv haproxy-main haproxy
 ```
 
+### Configuration
 > ⚠️ Important: The provided configuration is an example and must be customized to match your Kubernetes cluster topology and network environment before deployment.
 
-### Configuration
 -  00-global.cfg
 ```
 global
